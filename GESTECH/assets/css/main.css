@@ -1,0 +1,815 @@
+/* Header */
+#head {
+	background: #181015 url(../images/home2.jpg) no-repeat;
+	background-size: cover;
+	min-height: 520px;
+	text-align: center;
+	padding-top: 240px;
+	color: white;
+	font-family: "Open sans", Helvetica, Arial;
+	font-weight: 300;
+}
+#head1 {
+	background: #181015 url(../images/home2.jpg) no-repeat;
+	background-size: cover;
+	min-height: 520px;
+	text-align: center;
+	padding-top: 240px;
+	color: white;
+	font-family: "Open sans", Helvetica, Arial;
+	font-weight: 300;
+}
+
+#head.secondary {
+	height: 100px;
+	min-height: 100px;
+	padding-top: 0px;
+}
+
+#head .lead {
+	font-family: "Open sans", Helvetica, Arial;
+	font-size: 50px;
+	margin-bottom: 6px;
+	color: white;
+	line-height: 1.15em;
+}
+
+#head .tagline {
+	color: rgba(255, 255, 255, 0.75);
+	margin-bottom: 25px;
+}
+
+#head .tagline a {
+	color: #fff;
+}
+
+#head .btn {
+	margin-bottom: 10px;
+}
+
+#head .btn-default {
+	text-shadow: none;
+	background: transparent;
+	color: rgba(255, 255, 255, .5);
+	-webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
+	-moz-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
+	box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .5);
+	background: transparent;
+}
+
+#head .btn-default:hover,
+#head .btn-default:focus {
+	color: rgba(255, 255, 255, .8);
+	-webkit-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
+	-moz-box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
+	box-shadow: inset 0px 0px 0px 3px rgba(255, 255, 255, .8);
+	background: transparent;
+}
+
+#head .btn-default:active,
+#head .btn-default.active {
+	color: #fff;
+	-webkit-box-shadow: inset 0px 0px 0px 3px #fff;
+	-moz-box-shadow: inset 0px 0px 0px 3px #fff;
+	box-shadow: inset 0px 0px 0px 3px #fff;
+	background: transparent;
+}
+
+@media (max-width: 767px) {
+	#head {
+		min-height: 420px;
+		padding-top: 160px;
+	}
+
+	#head .lead {
+		font-size: 34px;
+		color:
+	}
+}
+
+
+/* Autohide navbar */
+.slideUp {
+	top: -100px;
+}
+
+.headroom {
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+
+
+
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Open sans", Helvetica, Arial;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+	margin-top: 30px;
+}
+
+blockquote {
+	font-style: italic;
+	font-family: Georgia;
+	color: #999;
+	margin: 30px 0 30px;
+}
+
+label {
+	color: #777;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.page-title {
+	margin-top: 20px;
+	font-weight: 300;
+}
+
+.text-muted {
+	color: #888;
+}
+
+.breadcrumb {
+	background: none;
+	padding: 0;
+	margin: 30px 0 0px 0;
+}
+
+ul.list-spaces li {
+	margin-bottom: 10px;
+}
+
+/* Helpers */
+.container-full {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.top-space {
+	margin-top: 60px;
+}
+
+.top-margin {
+	margin-top: 20px;
+}
+
+img {
+	max-width: 100%;
+}
+
+img.pull-right {
+	margin-left: 10px;
+}
+
+img.pull-left {
+	margin-right: 10px;
+}
+
+/* Style The Dropdown Button */
+.btn-group {
+  background-color: #FF8C00;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.login-button {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.login-button:hover .dropdown-menu {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.login-button:hover .btn-group {
+  background-color: #FF8C00;
+}
+
+
+
+.nav-area ul li a{
+	color: #fff;
+	display: block;
+	text-decoration: none;
+
+}
+.nav-area ul li a:hover{
+	background: #fff;
+	color: #fff;
+}
+.nav-area ul li:hover ul li{
+	display: block;
+}
+
+#social {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#social .wrapper {
+	width: 340px;
+	margin: 0 auto;
+}
+
+/* Main content block */
+.maincontent {}
+
+/* Sidebars */
+.sidebar {
+	padding-top: 36px;
+	padding-bottom: 30px;
+}
+
+.sidebar .widget {
+	margin-bottom: 20px;
+}
+
+.sidebar h1,
+.sidebar .h1,
+.sidebar h2,
+.sidebar .h2,
+.sidebar h3,
+.sidebar .h3 {
+	margin-top: 20px;
+}
+
+/* Footer */
+.footer1 {
+	background: #232323;
+	padding: 30px 0 0 0;
+	font-size: 12px;
+	color: #999;
+}
+
+.footer1 a {
+	color: #ccc;
+}
+
+.footer1 a:hover {
+	color: #fff;
+}
+
+.footer1 .widget {
+	margin-bottom: 30px;
+}
+
+.footer1 .widget-title {
+	font-size: 17px;
+	font-weight: bold;
+	color: #ccc;
+	margin: 0 0 20px;
+}
+
+.footer1 .entry-meta {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 35px 0;
+	padding: 2px 0;
+	color: #888888;
+	font-size: 12px;
+	font-size: 0.75rem;
+}
+
+.footer1 .entry-meta a {
+	color: #333333;
+}
+
+.footer1 .entry-meta .meta-in {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+
+.follow-me-icons {
+	font-size: 30px;
+}
+
+.follow-me-icons i {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.footer2 {
+	background: #191919;
+	padding: 15px 0;
+	color: #777;
+	font-size: 12px;
+}
+
+.footer2 a {
+	color: #aaa;
+}
+
+.footer2 a:hover {
+	color: #fff;
+}
+
+.footer2 p {
+	margin: 0;
+
+}
+
+.widget-simplenav {
+	margin-left: -5px;
+}
+
+.widget-simplenav a {
+	margin: 0 5px;
+}
+
+.navbar-brand {
+	position: relative;
+	bottom: 30px;
+}
+.btn-sign{
+	position: relative;
+	top: 30px;
+	color: #fff ;
+	font-size: 200%;
+	background-color: rgba(170, 155, 155, 0.308);
+}
+
+
+
+
+
+
+* {
+	box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+  }
+  
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+  
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  .container2{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+  
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+  }
+  
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+.btn-sign1{
+	position: relative;
+	top: 30px;
+	color: black ;
+	font-size: 100%;
+	background-color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+.etudiant:hover{
+	color: white;
+}
+.ressources:hover{
+	color: white;
+}
+.etudiant{
+	color: #B9B9B9;
+}
+.ressources{
+	color: #B9B9B9;
+	position: relative;
+	top: 3px;
+}
+ul {
+    list-style-type: none;
+}
+.row2 {
+	display: flex;
+	position: relative;
+  	
+	padding: 0%;
+}
+.bloc-acces.acces-1{
+	width: 400px;
+	height:250px;
+    padding: 0px;
+    border: 5px solid #777;
+    margin: 150px; 
+	border-radius: 10%;
+	clear: left;
+	margin-left: 150px;
+	float: left;
+	margin-right: 150px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+.bloc-acces.acces-2{
+	width: 400px;
+	height:250px;
+    padding: 0px;
+    border: 5px solid #777;
+    margin: 150px; 
+	border-radius: 10%;
+	clear: left;
+	margin-left: 150px;
+	float: left;
+	margin-right: 150px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+
+}
+.box1{
+	font-size: 20px;
+	font-weight: bold;
+	color: #2b2a2a !important;
+	width: auto;
+	text-transform: uppercase;
+	padding: 4%;
+	
+}
+.box11{
+	font-size: 17px;
+	width: auto;
+	font-weight: normal;
+	padding: 2%;
+}
+.box111{
+	font-size: 18px;
+	width: auto;
+	font-weight: normal;
+	padding: 2%;
+
+}
+
+.box2{
+	font-size: 20px;
+	font-weight: bold;
+	color: #2b2a2a !important;
+	width: auto;
+	text-transform: uppercase;
+	padding: 4%;
+	
+}
+.box22{
+	font-size: 17px;
+	width: auto;
+	font-weight: normal;
+	padding: 2%;
+}
+.box222{
+	font-size: 18px;
+	width: auto;
+	font-weight: normal;
+	padding: 2%;
+
+}
+.size-icon{
+	max-height: 100px;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+	display: flex;
+}
+.row-fluid{
+	width: 100%;
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+.dividerHeading{
+	text-align: center;
+	position: relative;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 0px;
+	color: #a62021;
+}
+.h4{
+	font-size: 20px;
+	position: relative;
+	line-height: 0;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	font-family: inherit;
+	font-weight: bold;
+}
+.container-text-center{
+	background-color: white;
+	margin-bottom: 30px ;
+}
+.span12{
+	margin-left: 0;width: 100%;
+	margin-bottom: 30px;
+	margin-top: 0px ;
+	display: block;
+	float: left;
+	background-color: white;
+	font-size: 14px;
+	line-height: 20px;
+}
+.span4{
+	margin-left: 0;width: 31.623931623931625%;
+	margin-bottom: 30px ;
+	margin-top: 0px ;
+	display: block;
+	float: left;
+	min-height: 30px;box-sizing: border-box;
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+	font-size: 14px;
+	line-height: 20px;
+}
+.spacer-30{
+	margin-bottom: 30px;
+	font-family: 'Open Sans',sans-serif;
+	color: #333;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+.row {
+	margin: 10px ;
+}
+
+.logo{
+	padding:0%;
+	margin: 0%;
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 15%;
+    height: 800px; /* only for demonstration, should be removed */
+    background: #ccc;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 5px;
+    position: relative;
+    top: 130px;
+  }
+  nav ul li a:hover{
+	  background: #fff;
+	  color: #262626;
+	  transition: 700ms ease;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 85%;
+    background-color: #f1f1f1;
+    height: 800px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  *{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background: white;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(15, 12, 12, 0.807);
+    padding: 0px ;
+
+
+	margin: 0px ;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    position: relative;
+    top: 40px;
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #232323;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #232323;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table thead, .fl-table tbody, .fl-table thead th {
+        display: block;
+    }
+    .fl-table thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table thead {
+        float: left;
+    }
+    .fl-table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table td, .fl-table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table tbody tr {
+        display: table-cell;
+    }
+    .fl-table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
