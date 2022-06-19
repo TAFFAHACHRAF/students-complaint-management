@@ -12,7 +12,7 @@
             $id_rec=$_GET['id_rec'];
 
             $sql1="INSERT INTO intervention values ('0','{$matricule}','{$agent}','{$date}','{$message}')";
-            $sql2="UPDATE reclamation set etat_reclamation='Bien traiter'
+            $sql2="UPDATE reclamation set etat_reclamation='En cours de traitement'
                     WHERE id_reclamation='{$id_rec}'";
 
             $result=$conex->query($sql1);

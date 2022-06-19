@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 19 Juin 2022 à 19:52
+-- Généré le :  Dim 19 Juin 2022 à 20:57
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `contacts_users` (
   `email` varchar(40) DEFAULT NULL,
   `message` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_contact`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Contenu de la table `contacts_users`
@@ -65,7 +65,9 @@ CREATE TABLE IF NOT EXISTS `contacts_users` (
 
 INSERT INTO `contacts_users` (`id_contact`, `nom`, `email`, `message`) VALUES
 (6, 'hanan', 'hanan@gmaill.com', 'dzoiefziejf'),
-(7, 'TAFFAH', 'taffahachraf184@gmail.com', 'hello administration');
+(7, 'TAFFAH', 'taffahachraf184@gmail.com', 'hello administration'),
+(8, 'Amin', 'amin@gmail.com', 'hello administration'),
+(9, 'mahmoud', 'mahmoud@gmail.com', 'hello im mahmoud');
 
 -- --------------------------------------------------------
 
@@ -106,16 +108,14 @@ CREATE TABLE IF NOT EXISTS `intervention` (
   PRIMARY KEY (`id_intervention`),
   KEY `reclamation` (`id_reclamation`),
   KEY `technicien` (`matricule_technicien`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `intervention`
 --
 
 INSERT INTO `intervention` (`id_intervention`, `id_reclamation`, `matricule_technicien`, `date_intervention`, `message`) VALUES
-(1, 2, 2, '2022-06-19', 'dizdiozjdijzd'),
-(2, 2, 2, '2022-06-19', 'pozdk\r\n'),
-(3, 2, 2, '2022-06-19', 'efef');
+(8, 2, 2, '2022-06-19', 'bien');
 
 -- --------------------------------------------------------
 
@@ -133,15 +133,14 @@ CREATE TABLE IF NOT EXISTS `reclamation` (
   PRIMARY KEY (`id_reclamation`),
   KEY `etudiant` (`matricule`),
   KEY `chambre` (`numero_chambre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 --
 -- Contenu de la table `reclamation`
 --
 
 INSERT INTO `reclamation` (`id_reclamation`, `matricule`, `numero_chambre`, `type`, `etat_reclamation`, `subject`) VALUES
-(11, 2, 88, 'CablÃ¢ge', 'Bien traiter', 'zoiiozdjiozjdoi'),
-(12, 2, 8, 'Plomberie', 'false', 'kozkdokz');
+(16, 2, 8, 'ElectricitÃ©', 'Bien traitÃ©', 'heloo');
 
 -- --------------------------------------------------------
 
@@ -191,7 +190,7 @@ CREATE TABLE IF NOT EXISTS `technicien` (
 --
 
 INSERT INTO `technicien` (`matricule`, `cin`, `nom`, `prenom`, `email`, `telephone`, `numero_cite`, `password`) VALUES
-(2, 'kjhiuhiu', 'oziudh', 'izudhizudh', 'zoid@gmail.com', '9874561', '58', '0000');
+(2, 'kjhiuhiu', 'Ahmed', 'Najah', 'zoid@gmail.com', '9874561', '58', '0000');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -40,27 +40,39 @@
   </nav>
   
   <article>
-    <h2>Les intervention qui conserne les réclamations</h2>
+    <h2>es intervention qui conserne les réclamations</h2>
         <div class="table-wrapper">
             <table class="fl-table">
                 <thead>
                     <tr>
                         <th>Date intervention</th>
-                        <th>Message de responsable ressources</th>
+                        <th>Type de probleme</th>
+                        <th>Etat de reclamation</th>
+                        <th>Sujet de reclamation</th>
+                        <th>Date intervention</th>
+                        <th>Message</th>
+                        <th>Résolution</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                        $sql="SELECT * FROM intervention,technicien
-                            WHERE matricule=matricule_technicien";
+                        $sql="SELECT * FROM intervention,technicien,reclamation
+                            WHERE intervention.matricule_technicien=technicien.matricule";
+                        echo $sql;
 
                         $result=$conex->query($sql);
                         if($result){
                             while($data=$result->fetch_assoc()){
+                                $id=$data['id_reclamation'];
                             ?>
                             <tr>
+                                <td><?= $data['numero_chambre'] ?></td>
+                                <td><?= $data['type'] ?></td>
+                                <td><?= $data['etat_reclamation'] ?></td>
+                                <td><?= $data['subject'] ?></td>
                                 <td><?= $data['date_intervention'] ?></td>
                                 <td><?= $data['message'] ?></td>
+                                <td><a href="resoudre.php?id_rec=<?= $id ?>"><button type="button"  class="btn btn-success">Résoudre</button></a></td>
                             </tr>
                             <?php
                             }
