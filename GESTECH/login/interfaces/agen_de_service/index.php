@@ -57,7 +57,7 @@
                 <tbody>
                     <?php
                         $sql="SELECT * FROM intervention,technicien,reclamation
-                            WHERE intervention.matricule_technicien=technicien.matricule";
+                            WHERE intervention.matricule_technicien=technicien.matricule ";
                         echo $sql;
 
                         $result=$conex->query($sql);

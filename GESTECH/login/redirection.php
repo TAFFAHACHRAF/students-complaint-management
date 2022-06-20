@@ -14,7 +14,7 @@
             session_name("etudiant");
 			session_start();
             $_SESSION['matricule']=$data1['matricule'];
-            header("location:interfaces/etudiant/");
+            header("location:choix.html");
         }
         else{
             $sql_admin="SELECT * FROM administrateur WHERE email='{$email}' AND password='{$password}'";
